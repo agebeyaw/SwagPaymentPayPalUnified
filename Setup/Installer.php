@@ -195,8 +195,8 @@ class Installer
         $entity = new Payment();
         $entity->setActive(false);
         $entity->setName(PaymentMethodProvider::PAYPAL_INSTALLMENTS_PAYMENT_METHOD_NAME);
-        $entity->setDescription('Ratenzahlung Powered by PayPal');
-        $entity->setAdditionalDescription('Wir ermöglichen Ihnen die Finanzierung Ihres Einkaufs mithilfe der Ratenzahlung Powered by PayPal. In Sekundenschnelle, vollständig online, vorbehaltlich Bonitätsprüfung.');
+        $entity->setDescription('Installment Powered by PayPal');
+        $entity->setAdditionalDescription('We allow you to finance your purchase using the Installment Powered by PayPal. In seconds, fully online, subject to credit check.');
         $entity->setAction('PaypalUnifiedInstallments');
 
         $this->modelManager->persist($entity);
@@ -223,8 +223,8 @@ class Installer
     {
         return '<!-- PayPal Logo -->'
         . '<a onclick="window.open(this.href, \'olcwhatispaypal\',\'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=500\'); return false;"'
-        . ' href="https://www.paypal.com/de/cgi-bin/webscr?cmd=xpt/cps/popup/OLCWhatIsPayPal-outside" target="_blank">'
-        . '<img src="{link file=\'frontend/_public/src/img/sidebar-paypal-generic.png\' fullPath}" alt="Logo \'PayPal empfohlen\'">'
+        . ' href="https://www.paypal.com/en/cgi-bin/webscr?cmd=xpt/cps/popup/OLCWhatIsPayPal-outside" target="_blank">'
+        . '<img src="{link file=\'frontend/_public/src/img/sidebar-paypal-generic.png\' fullPath}" alt="Logo \'PayPal recommended\'">'
         . '</a><br>' . '<!-- PayPal Logo -->';
     }
 
@@ -242,7 +242,7 @@ class Installer
             [
                 'description' => 'PayPal',
                 'additionalDescription' => '<!-- PayPal Logo --><a onclick="window.open(this.href, \'olcwhatispaypal\',\'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=500\'); '
-                    . 'return false;" href="https://www.paypal.com/de/cgi-bin/webscr?cmd=xpt/cps/popup/OLCWhatIsPayPal-outside" target="_blank">'
+                    . 'return false;" href="https://www.paypal.com/en/cgi-bin/webscr?cmd=xpt/cps/popup/OLCWhatIsPayPal-outside" target="_blank">'
                     . '<img src="{link file=\'frontend/_public/src/img/sidebar-paypal-generic.png\' fullPath}" alt="Logo \'PayPal recommended\'">'
                     . '</a><br><!-- PayPal Logo -->Paying with PayPal - easy, fast and secure.',
             ],

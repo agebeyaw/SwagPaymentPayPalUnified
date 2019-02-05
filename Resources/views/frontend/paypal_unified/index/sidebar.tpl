@@ -5,7 +5,7 @@
             {block name='frontend_index_sidebar_paypal_unified_logo_body'}
                 <div class="panel--body is--wide paypal--sidebar-inner">
                     {block name='frontend_index_sidebar_paypal_unified_logo_body_image'}
-                        <a href="https://www.paypal.com/de/webapps/mpp/personal"
+                        <a href="https://www.paypal.com/en/webapps/mpp/personal"
                            target="_blank"
                            title="{"{s name="logo/paypal/title"}PayPal - Pay fast and secure{/s}"|escape}">
                             <img class="logo--image"
@@ -25,7 +25,7 @@
             {block name='frontend_index_sidebar_paypal_unified_installments_logo_body'}
                 <div class="panel--body is--wide paypal--sidebar-inner">
                     {block name='frontend_index_sidebar_paypal_unified_installments_logo_body_image'}
-                        <a href="https://www.paypal.com/de/webapps/mpp/installments"
+                        <a href="https://www.paypal.com/en/webapps/mpp/installments"
                            target="_blank"
                            title="{"{s name="logo/installments/title"}Installments Powered by PayPal{/s}"|escape}">
                             <img class="logo--image"

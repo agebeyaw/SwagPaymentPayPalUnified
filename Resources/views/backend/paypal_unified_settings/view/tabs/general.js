@@ -91,7 +91,7 @@ Ext.define('Shopware.apps.PaypalUnifiedSettings.view.tabs.General', {
      * @returns { Ext.form.Container }
      */
     createNotice: function () {
-        var infoNotice = Shopware.Notification.createBlockMessage('{s name=description}PayPal - the PayPal button in the checkout! Register for your PayPal business account here: <a href="https://www.paypal.com/de/webapps/mpp/express-checkout" title="https://www.paypal.com/de/webapps/mpp/express-checkout" target="_blank">https://www.paypal.com/de/webapps/mpp/express-checkout</a>{/s}', 'info');
+        var infoNotice = Shopware.Notification.createBlockMessage('{s name=description}PayPal - the PayPal button in the checkout! Register for your PayPal business account here: <a href="https://www.paypal.com/en/webapps/mpp/express-checkout" title="https://www.paypal.com/en/webapps/mpp/express-checkout" target="_blank">https://www.paypal.com/en/webapps/mpp/express-checkout</a>{/s}', 'info');
 
         // There is no style defined for the type "info" in the shopware backend stylesheet, therefore we have to apply it manually
         infoNotice.style = {
@@ -234,7 +234,7 @@ Ext.define('Shopware.apps.PaypalUnifiedSettings.view.tabs.General', {
                     inputValue: true,
                     uncheckedValue: false,
                     fieldLabel: '{s name="fieldset/behaviour/advertiseReturns"}Free returns{/s}',
-                    boxLabel: '{s name="fieldset/behaviour/advertiseReturns/boxLabel"}Enablte to advertise free returns via PayPal. More information <a href="https://www.paypal.com/de/webapps/mpp/returns-on-paypal" title="PayPal returns" target="_blank">here</a>{/s}',
+                    boxLabel: '{s name="fieldset/behaviour/advertiseReturns/boxLabel"}Enablte to advertise free returns via PayPal. More information <a href="https://www.paypal.com/en/webapps/mpp/returns-on-paypal" title="PayPal returns" target="_blank">here</a>{/s}',
                     helpText: '{s name="fieldset/behaviour/advertiseReturns/helpText"}If you already offer free returns, the use of the program is excluded.{/s}'
                 }
             ]
